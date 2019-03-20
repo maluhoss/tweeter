@@ -1,0 +1,44 @@
+.new-tweet {
+
+    padding: 0.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    height: 9.5em;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #d4d1d1;
+}
+
+.new-tweet h2 {
+
+    text-align: left;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: block;
+    margin-top: 0.25em;
+
+}
+
+.new-tweet .tweet {
+
+    width: 100%;
+    margin-bottom: 0.25em;
+    height: 50px;
+    padding: 0.25em;
+
+}
+
+.new-tweet form input {
+    float: left;
+    margin-top: 0.1em;
+}
+
+.new-tweet .tweet .counter {
+    float: right;
+    padding-right: 1em;
+}
+
+.negative {
+    color: red;
+}
+
