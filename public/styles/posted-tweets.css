@@ -7,7 +7,7 @@
   width: 386px;
 }
 
-#posted-tweets .user-tweet:hover {
+#posted-tweets .user-tweet:hover  {
   opacity: 1;
 }
 
@@ -69,4 +69,21 @@
   float: right;
   color: teal;
   margin: 0em 0.25em;
+  display: none;
 }
+
+#posted-tweets .user-tweet:hover footer i{
+  display: inline-block;
+  float: right;
+  color: teal;
+  margin: 0em 0.25em;
+}
+
+/*.parent:hover > div {
+  opacity: 0.5;
+}
+
+.parent:hover > div:hover {
+  opacity: 1.0;
+}
+*/
