@@ -1,0 +1,72 @@
+#posted-tweets .user-tweet {
+  opacity: 1;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-top: 1em;
+  height: 200px;
+  width: 386px;
+}
+
+#posted-tweets .user-tweet:hover {
+  opacity: 0.3;
+}
+
+#posted-tweets .user-tweet header {
+  background-color: #f9f9f9;
+  height: 75px;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+#posted-tweets .user-tweet header #icon {
+  float: left;
+  border-radius: 5px;
+}
+
+#posted-tweets .user-tweet header h2 {
+  float: left;
+  margin-top: 0.1em;
+  margin-left: 0.5em;
+}
+
+#posted-tweets .user-tweet header h6 {
+  float: right;
+  margin-top: 1em;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+#posted-tweets .user-tweet main {
+  height: 85px;
+  padding: 1em 1em;
+  position: relative;
+  display: table;
+}
+
+#posted-tweets .user-tweet main p {
+  margin: 0em;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#posted-tweets .user-tweet footer {
+  padding: 0.5em;
+  border-top: 1px solid #f9f9f9;
+  height: 39px;
+  position: relative;
+}
+
+#posted-tweets .user-tweet footer h6 {
+  float: left;
+  font-weight: 300;
+  margin: 0em;
+  position: absolute;
+  top: 10px;
+}
+
+#posted-tweets .user-tweet footer i {
+  float: right;
+  color: teal;
+  margin: 0em 0.25em;
+}

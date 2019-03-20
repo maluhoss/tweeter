@@ -5,11 +5,11 @@ $(document).ready(function() {
     let length = max - $(this).val().length;
 
     if (length >= 0) {
-      $(".new-tweet .tweet .counter").text(length)
-      $(".new-tweet .tweet .counter").removeClass("negative");
+      $(".new-tweet .counter").text(length)
+      $(".new-tweet .counter").removeClass("negative");
     } else {
-      $(".new-tweet .tweet .counter").addClass("negative");
-      $(".new-tweet .tweet .counter").text(length);
+      $(".new-tweet .counter").addClass("negative");
+      $(".new-tweet .counter").text(length);
     }
   });
 });
