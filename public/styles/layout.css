@@ -29,7 +29,7 @@ body {
  */
  body .container {
   margin-top: 80px;
-  height: 450px;
+  height: 100%;
   width: 450px;
   background-color: #FFFFFF;
   display: block;
