@@ -115,8 +115,10 @@ $(document).ready(function() {
         url: '/tweets',
         data: $(this).serialize(),
       })
-      .then(loadTweets);
-      $('#submit-tweet').trigger("reset");
+      .then(loadTweets)
+      .then(function() {
+        $('textarea').val("").trigger("keyup");
+      })
     }
   });
 
