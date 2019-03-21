@@ -95,7 +95,6 @@ $(document).ready(function() {
     }
 
   loadTweets();
-  // renderTweets(data);
 
   // Test / driver code (temporary)
   // console.log($tweet); // to see what it looks like
