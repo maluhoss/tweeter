@@ -79,7 +79,7 @@ $(document).ready(function() {
 
     tweets.forEach(function(tweet) {
       var $tweet = createTweetElement(tweet);
-      $('#posted-tweets').append($tweet);
+      $('#posted-tweets').prepend($tweet);
     });
     // loops through tweets
       // calls createTweetElement for each tweet
