@@ -53,6 +53,11 @@ $(document).ready(function() {
   //     "created_at": 1461113796368
   //   }
   // ];
+  function escape(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
 
   function createTweetElement (tweet) {
     return `<article class="user-tweet">
@@ -62,7 +67,7 @@ $(document).ready(function() {
                         <h6>${tweet.user.handle}</h6>
                     </header>
                     <main>
-                      <p>${tweet.content.text}</p>
+                      <p>${escape(tweet.content.text)}</p>
                     </main>
                     <footer>
                       <h6>${tweet.created_at} ago</h6>
