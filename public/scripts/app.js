@@ -111,6 +111,7 @@ $(document).ready(function() {
         data: $(this).serialize(),
       })
       .then(loadTweets);
+      $('#submit-tweet').trigger("reset");
     }
   });
 
