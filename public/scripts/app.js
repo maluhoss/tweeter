@@ -122,4 +122,9 @@ $(document).ready(function() {
     }
   });
 
+  $(".toggle-button").on("click", function(event) {
+    $(".new-tweet").slideToggle('moderate');
+    $('textarea').focus()
+  });
+
 });
