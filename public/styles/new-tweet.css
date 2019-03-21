@@ -1,9 +1,8 @@
 .new-tweet {
-
+    height: 9.5em;
     padding: 0.5em;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-    height: 9.5em;
     background-color: #eee;
     border-radius: 5px;
     border: 1px solid #d4d1d1;
@@ -33,6 +32,11 @@
     margin-top: 0.1em;
 }
 
+.new-tweet textarea:focus {
+    outline: none !important;
+    border:1px solid red;
+}
+
 .new-tweet .counter {
     float: right;
     padding-right: 1em;
@@ -42,3 +46,11 @@
     color: red;
 }
 
+#ring-girl {
+    height: 300px;
+    width: 400px;
+    position: fixed;
+    top: 25px;
+    left:135px;
+    z-index: 10;
+}

@@ -8,6 +8,17 @@
 
 $(document).ready(function() {
   $('textarea').focus();
+  $('textarea').focus(function() {
+      $("#ring-girl").show();
+      setTimeout(function() { $("#ring-girl").hide(); }, 2500);
+    })
+  // .blur(function() {
+  //     $("#ring-girl").hide()
+  //   });
+
+     // $('textarea').focus();
+
+      $('#ring-girl').hide();
   // const data = [
   //   {
   //     "user": {
