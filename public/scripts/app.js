@@ -7,6 +7,7 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 
 $(document).ready(function() {
+  $('textarea').focus();
   // const data = [
   //   {
   //     "user": {
