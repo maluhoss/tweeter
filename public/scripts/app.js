@@ -7,7 +7,7 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 
 $(document).ready(function() {
-  $('textarea').focus();
+  $('.new-tweet').hide();
 
   //FOR A FUN TIME. COMMENT THIS BACK IN//
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   //    $('textarea').focus();
 
-      $('#ring-girl').hide();
+  $('#ring-girl').hide();
 
 
 
@@ -81,7 +81,7 @@ $(document).ready(function() {
       $(".c-validation").slideDown();
       $(".c-validation").text("Error! Messages need to have text and be less than 140 characters. Please modify your message.");
     } else {
-      $(".c-validation").hide(350);
+      $(".c-validation").slideUp(300);
       $.ajax({
         type: "POST",
         url: '/tweets',
