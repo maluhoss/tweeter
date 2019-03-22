@@ -41,13 +41,17 @@
   padding: 1em 1em;
   position: relative;
   display: table;
+  width: 350px;
 }
 
 #posted-tweets .user-tweet main p {
   margin: 0em;
+  width: 350px;
   text-align: left;
-  display: table-cell;
+  /*display: table-cell;*/
   vertical-align: middle;
+  display:block;
+  word-wrap:break-word;
 }
 
 #posted-tweets .user-tweet footer {

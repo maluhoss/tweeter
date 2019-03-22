@@ -1,5 +1,5 @@
 .new-tweet {
-    height: 9.5em;
+    /*height: 9.5em;*/
     padding: 0.5em;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
@@ -14,22 +14,30 @@
     border-bottom: 1px solid black;
     width: 100%;
     display: block;
-    margin-top: 0.25em;
+    margin-top: 0em;
 
 }
 
 .new-tweet .tweet {
 
-    width: 100%;
+    width: 366px;
     margin-bottom: 0.25em;
-    height: 50px;
+    /*height: 50px*/;
     padding: 0.25em;
 
+}
+
+.new-tweet form {
+    display: inline-block;
 }
 
 .new-tweet form input {
     float: left;
     margin-top: 0.1em;
+}
+
+.new-tweet textarea {
+    height: 75px;
 }
 
 .new-tweet textarea:focus {
@@ -53,4 +61,16 @@
     top: 25px;
     left:135px;
     z-index: 10;
+}
+
+.c-validation{
+display: none;
+  background: #c51244 !important;
+  padding: 10px !important;
+  border-radius: 1px !important;
+  position: relative;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+  color: white;
+  font-size: 10px;
 }
