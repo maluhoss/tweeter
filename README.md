@@ -4,8 +4,9 @@ A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and CSS3 a
 
 ## Final Project
 
-!["Screenshot of URLs page"](https://github.com/maluhoss/tinyApp/blob/master/docs/list-of-URLs-page.png)
-!["Screenshot of shortURL page"](https://github.com/maluhoss/tinyApp/blob/master/docs/shortURL-homepage.png)
+!["Screenshot of New Tweet Box"](https://github.com/maluhoss/tweeter/blob/master/docs/Compose-tweet-character-count-red.png)
+!["Screenshot of Posted Tweet"](https://github.com/maluhoss/tweeter/blob/master/docs/Posted-tweet.png)
+!["Screenshot of Tweeter Layout"](https://github.com/maluhoss/tweeter/blob/master/docs/tweeter-layout.png)
 
 
 ## Dependencies
