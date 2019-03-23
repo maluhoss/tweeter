@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
 /*Hide New Tweet upon page load*/
@@ -21,7 +20,8 @@ $(document).ready(function() {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-// Taken from Stack Overflow
+
+/*Taken from Stack Overflow*/
   function timeSince(date) {
     let seconds = Math.floor((new Date() - date) / 1000);
     let interval = Math.floor(seconds / 31536000);
@@ -46,7 +46,7 @@ $(document).ready(function() {
       return interval + " minutes";
     }
     return Math.floor(seconds) + " seconds";
-  }
+  };
 
 /*Function to create new Tweet*/
   function createTweetElement (tweet) {
@@ -109,7 +109,7 @@ $(document).ready(function() {
       .then(loadTweets)
       .then(function() {
         $("textarea").val("").trigger("keyup");
-      })
+      });
     };
   });
 
