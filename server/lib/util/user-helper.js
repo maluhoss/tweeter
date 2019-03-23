@@ -1,3 +1,5 @@
+/*User generator with Avatar, Name and handle*/
+
 "use strict";
 
 const Chance = require("chance");

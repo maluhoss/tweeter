@@ -7,16 +7,16 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
-    <!-- Font Awesome for Icons -->
+    <!-- Font Awesome for Icons on Compose Button in Nav bar and Icons in Posted Tweets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <!-- Font family: Roboto Condensed, size 300 and 700, italic -->
+    <!-- Font family: Roboto Condensed, Size 300 and 700, Italic and Regular-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
 
-    <!-- App CSS -->
+    <!-- Application Layout CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
-    <!-- Nav CSS -->
+    <!-- Navigation Bar CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
     <!-- New Tweet CSS -->
@@ -25,19 +25,18 @@
     <!-- Posted Tweets CSS -->
     <link rel="stylesheet" href="/styles/posted-tweets.css" type="text/css" />
 
-    <!-- External JS -->
+    <!-- External JS for Jquery Methods -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-    <!-- App JS -->
+    <!-- Application JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
 
-    <!-- Character count JS -->
+    <!-- Character Count in New Tweet JS -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
-
-    <!-- Top nav bar (fixed) -->
+    <!-- NAVIGATION BAR (Fixed to Top)- with Toggle Compose Button -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" width="80px" height="80px">
       <span class="header">Tweeter</span>
@@ -47,38 +46,23 @@
       </span>
     </nav>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
+    <!-- NEW TWEET SECTION- with Text Area and Character Counter and Tweet Button -->
+    <main class="tweet-container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form id="submit-tweet" action="index.html">
-          <textarea name="text" class="tweet" placeholder="What are you humming about?"></textarea>
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
           <img id="ring-girl" src="images/ring-girl.jpg"/>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
+        <!-- Error Message -->
         <p class="c-validation"></p>
       </section>
 
+    <!-- POSTED TWEETS (Under New Tweet)- Reverse Chronological and Has Icons and Hover State -->
       <section id="posted-tweets">
-        <!-- <article class="user-tweet">
-          <header>
-              <img id="icon" src="/images/ninja-icon.png" alt="ninja-icon" height="60px" width="60px"/>
-              <h2> Bill Fields</h2>
-              <h6>@MrFields</h6>
-          </header>
-          <main>
-            <p>Hi there how are you doing. I'm going to keep typing until this gets til 140 so yeah. Blah blah blah. I'm into rock music at the moment. Woo</p>
-          </main>
-          <footer>
-            <h6>10 days ago</h6>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-flag"></i>
-          </footer>
-        </article> -->
       </section>
     </main>
-
   </body>
 </html>

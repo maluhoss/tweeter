@@ -1,70 +1,57 @@
 .new-tweet {
-    /*height: 9.5em;*/
-    padding: 0.5em;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-    background-color: #eee;
-    border-radius: 5px;
-    border: 1px solid #d4d1d1;
+  padding: 0.5em;
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid #d4d1d1;
 }
 
+/*User Full Name*/
 .new-tweet h2 {
-
-    text-align: left;
-    border-bottom: 1px solid black;
-    width: 100%;
-    display: block;
-    margin-top: 0em;
-
+  text-align: left;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: block;
+  margin-top: 0em;
 }
 
-.new-tweet .tweet {
-
-    width: 366px;
-    margin-bottom: 0.25em;
-    /*height: 50px*/;
-    padding: 0.25em;
-
-}
-
+/*Form includes text area that has input, tweet button and character count*/
 .new-tweet form {
-    display: inline-block;
+  display: inline-block;
 }
 
+/*Tweet Button*/
 .new-tweet form input {
-    float: left;
-    margin-top: 0.1em;
+  float: left;
+  margin-top: 0.1em;
 }
 
 .new-tweet textarea {
-    height: 75px;
+  height: 75px;
+  width: 366px;
+  margin-bottom: 0.25em;
+  padding: 0.25em;
 }
 
+/*Autofocus on Text Area*/
 .new-tweet textarea:focus {
-    outline: none !important;
-    border:1px solid red;
+  outline: none !important;
+  border:1px solid red;
 }
 
+/*Character Count under Text Area*/
 .new-tweet .counter {
-    float: right;
-    padding-right: 1em;
+  float: right;
+  padding-right: 1em;
 }
 
+/*Negative state for Character count > 140 */
 .negative {
-    color: red;
+  color: red;
 }
 
-#ring-girl {
-    height: 300px;
-    width: 400px;
-    position: fixed;
-    top: 25px;
-    left:135px;
-    z-index: 10;
-}
-
-.c-validation{
-display: none;
+/*Error Message when Character count = 0 or >140 */
+.c-validation {
+  display: none;
   background: #c51244 !important;
   padding: 10px !important;
   border-radius: 1px !important;
@@ -73,4 +60,14 @@ display: none;
   margin-top: 10px;
   color: white;
   font-size: 10px;
+}
+
+/*Surprise!*/
+#ring-girl {
+  height: 300px;
+  width: 400px;
+  position: fixed;
+  top: 25px;
+  left:135px;
+  z-index: 10;
 }

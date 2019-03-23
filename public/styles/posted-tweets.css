@@ -1,3 +1,4 @@
+/*Individual User Posted Tweet Body*/
 #posted-tweets .user-tweet {
   opacity: 0.7;
   border: 1px solid #cccccc;
@@ -7,6 +8,7 @@
   width: 386px;
 }
 
+/*Posted User Tweet Hover State with Full Opacity*/
 #posted-tweets .user-tweet:hover  {
   opacity: 1;
 }
@@ -18,17 +20,20 @@
   border-radius: 5px;
 }
 
+/*User Avatar*/
 #posted-tweets .user-tweet header #icon {
   float: left;
   border-radius: 5px;
 }
 
+/*User Name*/
 #posted-tweets .user-tweet header h2 {
   float: left;
   margin-top: 0.1em;
   margin-left: 0.5em;
 }
 
+/*User Handle*/
 #posted-tweets .user-tweet header h6 {
   float: right;
   margin-top: 1em;
@@ -44,11 +49,11 @@
   width: 350px;
 }
 
+/*Text in Posted Tweet*/
 #posted-tweets .user-tweet main p {
   margin: 0em;
   width: 350px;
   text-align: left;
-  /*display: table-cell;*/
   vertical-align: middle;
   display:block;
   word-wrap:break-word;
@@ -61,6 +66,7 @@
   position: relative;
 }
 
+/*Time of Post*/
 #posted-tweets .user-tweet footer h6 {
   float: left;
   font-weight: 300;
@@ -69,6 +75,7 @@
   top: 10px;
 }
 
+/*Flag, Retweet and Like Icons which are hidden when not hovering*/
 #posted-tweets .user-tweet footer i {
   float: right;
   color: teal;
@@ -76,18 +83,10 @@
   display: none;
 }
 
+/*Hover state for Footer Icons, which appear when hovering*/
 #posted-tweets .user-tweet:hover footer i{
   display: inline-block;
   float: right;
   color: teal;
   margin: 0em 0.25em;
 }
-
-/*.parent:hover > div {
-  opacity: 0.5;
-}
-
-.parent:hover > div:hover {
-  opacity: 1.0;
-}
-*/

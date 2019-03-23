@@ -1,19 +1,15 @@
 /*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
+/*Font used for application */
  * {
   font-family: 'Roboto Condensed', sans-serif;
  }
@@ -24,10 +20,8 @@ body {
   background-color: #eee;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- body .container {
+/*Tweet Container includes New Tweet Section (hidden on page load) and Posted Tweets*/
+ body .tweet-container {
   margin-top: 80px;
   height: 100%;
   width: 450px;
