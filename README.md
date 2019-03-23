@@ -1,6 +1,6 @@
 # Tweeter Project
 
-A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and CSS3 and MongoDB. There's a surprise if you comment back in the fun section in the app.js.
+A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and CSS3 and MongoDB. There's a surprise if you comment back in the fun section in app.js.
 
 ## Final Project
 
