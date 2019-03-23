@@ -17,10 +17,36 @@ $(document).ready(function() {
 
 /*Function to encode text to prevent cross-site scripting*/
   function escape(str) {
-    var div = document.createElement("div");
+    let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+// Taken from Stack Overflow
+  function timeSince(date) {
+    let seconds = Math.floor((new Date() - date) / 1000);
+    let interval = Math.floor(seconds / 31536000);
+
+    if (interval > 1) {
+      return interval + " years";
+    }
+    interval = Math.floor(seconds / 2592000);
+    if (interval > 1) {
+      return interval + " months";
+    }
+    interval = Math.floor(seconds / 86400);
+    if (interval > 1) {
+      return interval + " days";
+    }
+    interval = Math.floor(seconds / 3600);
+    if (interval > 1) {
+      return interval + " hours";
+    }
+    interval = Math.floor(seconds / 60);
+    if (interval > 1) {
+      return interval + " minutes";
+    }
+    return Math.floor(seconds) + " seconds";
+  }
 
 /*Function to create new Tweet*/
   function createTweetElement (tweet) {
@@ -34,7 +60,7 @@ $(document).ready(function() {
                       <p>${escape(tweet.content.text)}</p>
                     </main>
                     <footer>
-                      <h6>${tweet.created_at} ago</h6>
+                      <h6>${timeSince(tweet.created_at)} ago</h6>
                       <i class="fas fa-heart"></i>
                       <i class="fas fa-retweet"></i>
                       <i class="fas fa-flag"></i>
@@ -47,7 +73,7 @@ $(document).ready(function() {
     $("#posted-tweets").empty();
 
     tweets.forEach(function(tweet) {
-      var $tweet = createTweetElement(tweet);
+      let $tweet = createTweetElement(tweet);
       $("#posted-tweets").prepend($tweet);
     });
   };
@@ -92,7 +118,7 @@ $(document).ready(function() {
   - slide up and hide new tweet section */
   $(".toggle-button").on("click", function(event) {
     $(".new-tweet").slideToggle("moderate");
-    $("textarea").focus()
+    $("textarea").focus();
   });
 
 });

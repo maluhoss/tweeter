@@ -16,7 +16,6 @@ A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and CSS3 a
 - Express
 - MongoDB
 - MD5
-- Moments
 
 ## Getting Started
 

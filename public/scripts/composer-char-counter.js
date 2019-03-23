@@ -4,7 +4,7 @@ difference less than 0 (message over 140): Show character count and add negative
 $(document).ready(function() {
   $(".new-tweet textarea").keyup(function() {
     const max = 140;
-    const length = max - $(this).val().length;
+    let length = max - $(this).val().length;
 
     if (length >= 0) {
       $(".new-tweet .counter").text(length)

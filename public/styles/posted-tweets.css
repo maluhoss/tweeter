@@ -9,7 +9,7 @@
 }
 
 /*Posted User Tweet Hover State with Full Opacity*/
-#posted-tweets .user-tweet:hover  {
+#posted-tweets .user-tweet:hover {
   opacity: 1;
 }
 
@@ -43,19 +43,19 @@
 
 #posted-tweets .user-tweet main {
   height: 85px;
-  padding: 1em 1em;
+  padding: 1em;
   position: relative;
   display: table;
-  width: 350px;
+  width: 386px;
 }
 
 /*Text in Posted Tweet*/
 #posted-tweets .user-tweet main p {
   margin: 0em;
-  width: 350px;
+  width: 380px;
   text-align: left;
   vertical-align: middle;
-  display:block;
+  display: table-cell;
   word-wrap:break-word;
 }
 
@@ -84,7 +84,7 @@
 }
 
 /*Hover state for Footer Icons, which appear when hovering*/
-#posted-tweets .user-tweet:hover footer i{
+#posted-tweets .user-tweet:hover footer i {
   display: inline-block;
   float: right;
   color: teal;

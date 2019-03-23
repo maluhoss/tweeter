@@ -64,10 +64,10 @@
 
 /*Surprise!*/
 #ring-girl {
-  height: 300px;
-  width: 400px;
+  height: 600px;
+  width: 800px;
   position: fixed;
-  top: 25px;
-  left:135px;
+  top: 82px;
+  left:360px;
   z-index: 10;
 }
